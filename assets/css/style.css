@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+img{
+    width: 100%;
+}
+
+/* nav{
+    height: 75px;
+    background-color: blueviolet;
+} */
+
+/* HEADER */
+.header__header{
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+.header__header h1{
+    font-size: 190px;
+    font-weight: 900;
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: rgba(202, 216, 217, 1);
+    text-align: center;
+}
+.header__header img{
+    position: absolute;
+    bottom: 0;
+    left: 32%;
+    width: 32%;
+}
+
+
+.header__text{
+    width: 90%;
+    margin: auto;
+    padding: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.header__header .desc{
+    font-size: 35px;
+    text-align: right;
+    font-family: "Old Standard TT";
+}
+.header__header  p{
+    margin-bottom: 20px;
+}
+.header__header h2{
+    font-weight: 900;
+}
+.header__btn{
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.header__btn button{
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    margin: 1em 0.8em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+        .button.type3 {
+            color: black;
+        }
+        .button.type3.type3::after, .button.type3.type3::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            border: 3px solid;
+            transition: all 0.4s ease;
+            border-radius: 2px;
+        }
+        .button.type3.type3::after {
+            bottom: 0;
+            right: 0;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: #435a6b;
+            border-right-color: #435a6b;
+        }
+        .button.type3.type3::before {
+            top: 0;
+            left: 0;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-top-color: #435a6b;
+            border-left-color: #435a6b;
+        }
+        .button.type3.type3:hover:after, .button.type3.type3:hover:before {
+            border-bottom-color: #435a6b;
+            border-right-color: #435a6b;
+            border-top-color: #435a6b;
+            border-left-color: #435a6b;
+            width: 100%;
+            height: 100%;
+        }
+.header__btn a{
+    margin-top: 20px;
+    text-align: right;
+    color: gray;
+}
+.header__overlay{
+    position: absolute;
+    width: 20%;
+    right: 20%;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    transition: 0.4s;
+}
+#lebutton:hover ~ #header-overlay{
+    bottom: 500px;
+    color: #F4841A;
+}
+ 
+
+
+
+
+
+/* PRODUIT */
+.section__produit{
+    display: flex;
+    width: 100%;
+    
+}
+.produit{
+    width: 333%;
+    height: 32vh;
+}
+.produit__text{
+    color: white;
+    margin: auto;
+    padding: 5px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.produit__text h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+}
+/* .produit__text h2:nth-child(2n){
+    text-transform: uppercase;
+    font-weight: 900;
+} */
+.produit1{
+    background-image: 
+    linear-gradient(
+        rgba(0, 76, 86, 0.3),
+        rgba(0, 76, 86, 0.3)
+    ),
+    url(../img/pierre2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.produit2{
+    background-image: 
+    linear-gradient(
+        rgba(0, 76, 86, 0.3),
+        rgba(0, 76, 86, 0.3)
+    ),
+    url(../img/b-bougie.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.produit3{
+    background-image: 
+    linear-gradient(
+        rgba(0, 76, 86, 0.3),
+        rgba(0, 76, 86, 0.3)
+    ),
+    url(../img/b-maquillage.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+
+
+/* COLLECTion */
+.coll__haut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coll_haut .haut__text{
+    width: 30%;
+}
+
+.bas__img .coll__img{
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    bottom: 0;
+    left: 5%;
+}
+.haut__text{
+    font-size: 30px;
+    margin: 50px;
+    font-family: "Old Standard TT";
+    text-transform: uppercase;
+}
+.haut__text p{
+    font-size: 40px;
+    letter-spacing: 7px;
+}
+.haut__text h2{
+    font-weight: 700;
+}
+.haut__card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.caard{
+    height: 130px;
+    border-radius: 9px;
+    margin: 5px;
+    transition: 0.3s;
+}
+.caard1:hover{
+    transform: translateX(-15px);
+}
+.caard3:hover{
+    transform: translateX(-15px);
+}
+.caard6:hover{
+    transform: translateX(-15px);
+}
+.caard2:hover{
+    transform: translateX(15px);
+}
+.caard4:hover{
+    transform: translateX(15px);
+}
+.caard5:hover{
+    transform: translateX(15px);
+}
+.coll__cate{
+    margin: 15px;
+    font-size: 17px;
+    color: white;
+}
+.caard h3:first-child{
+    text-transform: uppercase;
+}
+.coll__cate{
+    margin: 15px;
+    font-size: 17px;
+    color: white;
+}
+.caard h3:first-child{
+    text-transform: uppercase;
+}
+.caard1{
+    width: 60%;
+    background-image:url(../img/bijouxacier-so.jpg);
+}
+.caard2{
+    width: 30%;
+    background-image: url(../img/oiseaux.jpg);
+}
+.caard3{
+    width: 45%;
+    background-image: url(../img/ideescadeaux5.jpg);
+
+}
+.caard4{
+    width: 45%;
+    background-image: url(../img/cheveux-so2.jpg);
+}
+.caard5{
+    width: 60%;
+    background-image: url(../img/madeinfrance.jpg);
+    background-size: cover;
+}
+.caard6{
+    width: 30%;
+    background-image: url(../img/zodiac.jpg);
+    background-position: right;
+}
+
+.coll__bas{
+    display: flex;
+    position: relative;
+    margin-top: 150px;
+
+}
+.bas__img{
+    width: 50%;
+    height: 500px;
+    background-color: #F4841A;
+    margin-top: 150px;
+}
+.bas__img img{
+    position: absolute;
+    bottom:0;
+    left: 7%;
+    width: 35%;
+}
+.coll__titre{
+    position: absolute;
+    width: 12%;
+    text-align: right;
+    top: 45%;
+    left: 43%;
+    font-size: 30px;
+    font-family: "Old Standard TT";
+
+}
+.bas__text{
+    width: 25%;
+    margin-left: 15%;
+    margin-top: 70px;
+}
+.bas__text p{
+    font-size: 23px;
+    text-align: justify;
+}
+.bas__btn{
+    margin-top: 10%;
+    padding: 20px;
+    background-color: black;
+    border-radius: 7px;
+    width: 40%;
+    text-align: center;
+    transition: 0.3s;
+}
+.bas__btn:hover{
+    transform: translateY(-15px);
+}
+.bas__btn a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+
+/* REASSURANCE */
+.rea{
+    margin:3px 200px ;
+    display: flex;
+    justify-content: space-around;
+
+}
+.bloc__rea{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.bloc__rea i{
+    font-size: 30px;
+    margin-right: 10px;
+}
